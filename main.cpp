@@ -12,7 +12,6 @@ auto recursiveGetFileNamesByExtension = [](std::filesystem::path path, std::file
 };
 
 int main() {
-
     auto names = recursiveGetFileNamesByExtension(std::filesystem::path("D:\\Bases"), std::filesystem::path(".1CD"));
     for (auto &name: names) {
         std::cout << name << std::endl;
